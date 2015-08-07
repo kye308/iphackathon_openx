@@ -24,9 +24,7 @@
 	    </div>
 
 	    <select ng-model="model.id" convert-to-number>
-	      <option value="0">Toilet Zero</option>
-	      <option value="1">Toilet One</option>
-	      <option value="2">Toilet Two</option>
+	      <option value="0">{{names[3].model}}</option>
 	    </select>
 	    <br>
 	
@@ -44,9 +42,9 @@
 	        <select ng-model="newToilet.id" 
 	                ng-init='newToilet.id = ""'convert-to-number>
 	          <option value=""></option>
-	          <option value="0">New Toilet Zero</option>
-	          <option value="1">New Toilet One</option>
-	          <option value="2">New Toilet Two</option>
+	          <option value="0">{{names[0].model}}</option>
+	          <option value="1">{{names[1].model}}</option>
+	          <option value="2">{{names[2].model}}</option>
 	        </select>
 	    </div>
 		</div>
