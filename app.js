@@ -13,8 +13,8 @@
             var appdata = snapshot.val();
             console.log($scope.names);
                 $scope.$apply(function() {
-                $scope.names = appdata.toilets[0];
-              });
+                $scope.names = appdata.toilets;
+              })
 
         }, function (errorObject) {
           console.log("The read failed: " + errorObject.code);
