@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'> -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,300' rel='stylesheet' type='text/css'>
   </head>
   <body ng-controller="customersCtrl as customersCtrl">
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
@@ -13,19 +14,27 @@
     <script type="text/javascript" src="app.js"></script>
     <div class="stage" id="stageTitle">
 	    <h1>$MARTwater</h1>
+	    <h2 style="font-weight:300;">$ave Money One Drop at a Time</h2>
 	    <div id="clickpic" onclick="changeHouse();" style="width:50%; margin:0 auto;">
 		    <img id="housepic" src="Home_NoneSelected.png" style="height:400px;"/>
 	    </div>
     </div>
 
     <div class="stage" id="stageQ1" style="display:none;">
-	    <div id="modelsQuestion">
-	        <h4>What model do you currently own?<h4>
-	    </div>
+	    <div style="display:inline-block">
+		    <div id="modelsQuestion">
+		        <h4>What model do you currently own?<h4>
+		    </div>
 
-	    <select ng-model="model.id" convert-to-number>
-	      <option value="0">{{names[3].model}}</option>
-	    </select>
+		    <select ng-model="model.id" convert-to-number>
+		      <option value="0">{{names[3].model}}</option>
+		    </select>
+		</div>
+	    <!-- <div style="display:inline-block"> -->
+	        <img src="toilet_icon-01.png" class="toilicon" style="display:inline-block"/>
+	        <img src="toilet_icon-01.png" class="toilicon" style="display:inline-block"/>
+	        <img src="toilet_icon-01.png" class="toilicon" style="display:inline-block"/>
+        <!-- </div> -->
 	    <br>
 	
 	   
@@ -102,12 +111,13 @@
                 <tr>
                      <td>Price</td>
                      <td>{{names[3].price*devices}}</td><td>{{names[newToilet.id].price}}</td>
+
                      <tr>
 
                      <td>Get $mart Now!</td>
+                     <td><a ng-href="{{names[3].amazon}}"><img ng-src="button_donate.png" class="comptoilpic"/></a></td>
+                     <td><a ng-href="{{names[newToilet.id].amazon}}"><img ng-src="button_buy.png" class="comptoilpic" /></a></td>
 
-                     <td><a ng-href="{{names[3].amazon}}"><img ng-src="{{names[3].picture}}" class="comptoilpic"/></a></td>
-                     <td><a ng-href="{{names[newToilet.id].amazon}}"><img ng-src="{{names[newToilet.id].picture}}" class="comptoilpic" /></a></td>
 
 
                      </tr>

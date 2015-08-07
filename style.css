@@ -3,14 +3,21 @@ body {
 	padding-bottom: 0px;
 	background-color: #7FADE5;
 	font-family: "Raleway";
+	font-weight: 500;
 }
 
 h1 {
 	font-size: 100px;
 	text-align: center;
-	padding-bottom: 50px;
+	/*padding-bottom: 10px;*/
 	color: white;
+}
 
+h2 {
+	color: white;
+	text-align: center;
+	margin-top: 0px;
+	padding-bottom: 40px;
 }
 
 .stage {
@@ -52,4 +59,8 @@ h1 {
 .comptoilpic {
 	height:100px;
 	width:100px;
+}
+
+.toilicon {
+	height: 150px;
 }
