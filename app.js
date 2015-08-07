@@ -121,4 +121,18 @@
 
 
 
+function changeHouse() {
+    console.log("changehousecalled");
+    console.log(document.getElementById("clickpic").getElementsByTagName('img')[0]);
+    console.log(document.getElementById("clickpic").getElementsByTagName('img')[0]);
+    var srcpic = document.getElementById("clickpic").getElementsByTagName('img')[0].src;
+    var file = srcpic.split('/')[srcpic.split('/').length-1];
+    if(file === "Home_NoneSelected.png") {
+        console.log("CHANGE GODDAMIT");
+        document.getElementById("clickpic").getElementsByTagName('img')[0].src = "Home_ToiletSelected.png";
+    } else {
+        document.getElementById("clickpic").getElementsByTagName('img')[0].src = "Home_NoneSelected.png";
 
+    }
+
+}
