@@ -101,7 +101,6 @@
                      <tr>
                      <td>Get Smart Now!</td>
                      <td><a ng-href="{{names[3].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42"/></a></td>
-                     <td><a ng-href="{{names[1].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42" /></a></td>
                      </tr>
 
                   </tr>
@@ -109,6 +108,7 @@
             </div>
 
             <p>Total Rebate {{toiletRebate * devices}}</p>
+            <p>Total Water Saved {{(names[3].gpf - names[newToilet.id].gpf).toFixed(2)}}</p>
 
         </article>
         
