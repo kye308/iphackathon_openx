@@ -1,6 +1,6 @@
 body {
 	padding-top: 50px;
-	padding-bottom: 100px;
+	padding-bottom: 10px;
 	background-color: #7FADE5;
 	font-family: "Raleway";
 }
@@ -33,4 +33,10 @@ h1 {
 }
 #stageQ2 {
 	background-color: #6387B2;
+}
+
+#stageFooter {
+	padding-bottom: 40px;
+	font-size: 20px;
+	text-align: right;
 }
