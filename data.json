@@ -1,0 +1,42 @@
+{
+	"toilets": [
+		{"model":"American Standard 2073.014",
+		 "gpf":1.28,
+		 "picture":"http://ecx.images-amazon.com/images/I/41jc93VP6gL._SL1000_.jpg",
+		 "amazon":"http://www.amazon.com/American-Standard-2073-014-020-Efficiency-Elongated/dp/B001A05D38",
+		 "style":4
+		},
+		{"model":"Toto CST412MF",
+		"gpf":1.075,
+		"picture":"http://ecx.images-amazon.com/images/I/51iLlirnRqL._SL1280_.jpg",
+		"amazon":"http://www.amazon.com/CST412MF-01-Elongated-Two-Piece-Toilet-1-6GPF/dp/B003935W7Q/ref=sr_1_35?ie=UTF8&qid=1438974784&sr=8-35&keywords=toilets",
+		"style":10
+		},
+		{"model":"Kohler K-11453",
+		"gpf":1.28,
+		"picture":"http://images.amazon.com/images/G/01/richmedia/images/cover.gif",
+		"amazon":"http://www.amazon.com/K-11453-96-Kelston-Complete-Solution-Elongated/product-reviews/B001F7ILCQ",
+		"style":7
+		},
+		{"model":"Kohler K-11453",
+		"gpf":1.28,
+		"picture":"http://images.amazon.com/images/G/01/richmedia/images/cover.gif",
+		"amazon":"http://www.amazon.com/K-11453-96-Kelston-Complete-Solution-Elongated/product-reviews/B001F7ILCQ",
+		"style":7
+		},
+		{"model":"American Standard Pink Toilet Commode 1950",
+		"gpf":3.5,
+		"picture":"http://i.ebayimg.com/00/s/MTYwMFgxMDE4/z/8GgAAOSwqu9U4kcl/$_57.JPG",
+		"amazon":"http://www.ebay.com/itm/Antique-Vintage-Retro-American-Standard-Pink-Toilet-Commode-1950s-/301694417952",
+		"style":5
+		}
+	],
+	"clotheswasher": [
+		{"model":"Blomberg WM77120",
+		 "iwf":3.5,
+		 "picture":"http://ecx.images-amazon.com/images/I/41jc93VP6gL._SL1000_.jpg",
+		 "amazon":"http://www.amazon.com/American-Standard-2073-014-020-Efficiency-Elongated/dp/B001A05D38",
+		 "style":4
+		},
+	]
+}
