@@ -7,11 +7,10 @@
     <!-- <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-controller="customersCtrl">
+  <body ng-controller="customersCtrl as customersCtrl">
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
-
     <div class="stage" id="stageTitle">
 	    <h1>$MARTwater</h1>
 	    <div id="clickpic" onclick="changeHouse();" style="width:50%; margin:0 auto;">
@@ -32,7 +31,7 @@
 	    <br>
 	
 	    <h4>How many devices do you want to buy?</h4>
-	    <div counter value="devices" min="0"></div>
+	    <counter ng-model="counterModel" id="counter" value="devices" min="0">{{counterModel.numDevices}}</counter>
 
     </div>
     
@@ -89,33 +88,39 @@
     </article>
 
 
-    <div class="compare">
+    <div ng-controller="customersCtrl" class="compareAndSave">
         <br>
         <article ng-show='newToilet.id != "" || newSprinkler.id != "" || newWashingMachine.id != ""'>
-            <p>This should show up. It's the compare. WEEEEEE!!!!</p>
+            <div> 
+                <p>{{names.model}}</p>
+                <table>
+
+                  <tr><td>Model Name</td><td>{{names[0].model}}</td><td>{{names[1].model}}</td></tr>
+                    <tr><td>Model</td><td><img ng-src="{{names[0].picture}}" height="42" width="42"/></td><td><img ng-src="{{names[1].picture}}" height="42" width="42"/></td></tr>
+
+                  <tr><td>Gallons per flush</td><td>{{names[0].gpf}}</td><td>{{names[1].gpf}}</td></tr>
+                <tr>
+                     <td>Price</td>
+                     <td>{{names[0].price*devices}}</td><td>{{names[0].price}}</td>
+                     <tr>
+                     <td>Get Smart Now!</td>
+                     <td><a ng-href="{{names[1].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42"/></a></td>
+                     <td><a ng-href="{{names[1].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42" /></a></td>
+                     </tr>
+
+                  </tr>
+                </table>
+            </div>
+
+            <p>Total Rebate {{toiletRebate * devices}}</p>
+
         </article>
         
     </div>
 
-    <div ng-controller="customersCtrl"> 
+<div> 
 
-<table>
-  <tr><td>Model Name</td><td>{{names[0].model}}</td><td>{{names[1].model}}</td></tr>
-    <tr><td>Model</td><td><img ng-src="{{names[0].picture}}" height="42" width="42"/></td><td><img ng-src="{{names[1].picture}}" height="42" width="42"/></td></tr>
 
-  <tr><td>Gallons per flush</td><td>{{names[0].gpf}}</td><td>{{names[1].gpf}}</td></tr>
-<tr>
-     <td>Price</td>
-     <td>{{names[0].price*devices}}</td><td>{{names[0].price}}</td>
-     <tr>
-     <td>Get Smart Now!</td>
-     <td><a ng-href="{{names[1].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42"/></a></td>
-     <td><a ng-href="{{names[1].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42" /></a></td>
-     </tr>
-
-  </tr>
-</table>
-</div>
 
   </body>
   
