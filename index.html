@@ -115,8 +115,8 @@
                      <tr>
 
                      <td>Get $mart Now!</td>
-                     <td><a ng-href="{{names[3].amazon}}"><img ng-src="button_donate.png" class="comptoilpic"/></a></td>
-                     <td><a ng-href="{{names[newToilet.id].amazon}}"><img ng-src="button_buy.png" class="comptoilpic" /></a></td>
+                     <td><a ng-href="http://www.habitat.org/getinv/materials_donations.aspx"><img ng-src="button_donate.png"  class="buynow"/></a></td>
+                     <td><a ng-href="{{names[newToilet.id].amazon}}"><img ng-src="button_buy.png"  class="buynow"/></a></td>
 
 
 
@@ -129,6 +129,9 @@
             <p>Total Rebate: {{toiletRebate * devices}}</p>
             <p>Total Water Saved: {{((names[3].gpf - names[newToilet.id].gpf) * 4 * 365).toFixed(2) }} gallons / year</p>
 
+	    	<div style="width:50%; margin:0 auto;">
+	            <img src="WaterDrop_Update_Hover.png" style="height:200px;"/>
+			</div>
 		</div>
         </div>
 	    </div>
