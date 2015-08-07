@@ -2,18 +2,26 @@
 
     var app = angular.module('rebates', []);
 
-    app.controller('customersCtrl', function($scope, $http) {
-        $scope.devices = 1;
-        var ref = new Firebase("https://glowing-heat-7408.firebaseio.com/");
+     app.controller('customersCtrl', function($scope, $http) {
+        var ref =  new Firebase("https://glowing-heat-7408.firebaseio.com/");
+
+        
+
+        console.log(ref);
 
         ref.on("value", function(snapshot) {
             console.log(snapshot.val());
             var appdata = snapshot.val();
-            console.log(appdata.toilets);
+            console.log($scope.names);
+                $scope.$apply(function() {
+                $scope.names = appdata.toilets[0];
+              });
+
         }, function (errorObject) {
           console.log("The read failed: " + errorObject.code);
         });
 
+    
         // $http.get("http://www.w3schools.com/angular/customers.php")
         // .success(function (response) {$scope.names = response.records;});
     });
