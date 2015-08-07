@@ -14,14 +14,18 @@
     <script type="text/javascript" src="app.js"></script>
     <div class="stage" id="stageTitle">
 	    <h1>$MARTwater</h1>
-	    <h2 style="font-weight:300;">$ave Money One Drop at a Time</h2>
+<!-- 	    <img src="Logo.png" style="display:inline-block; height:100px;">
+	    <h1 style="display:inline-block;">MARTwater</h1> -->
+	    <h2 style="font-weight:300;">How Much Can You $ave?</h2>
 	    <div id="clickpic" onclick="changeHouse();" style="width:50%; margin:0 auto;">
 		    <img id="housepic" src="Home_NoneSelected.png" style="height:400px;"/>
 	    </div>
     </div>
 
     <div class="stage" id="stageQ1" style="display:none;">
-	    <div style="display:inline-block">
+	        <img src="toilet_icon-01.png" class="toilicon" style="padding-left:50px; padding-right:50px; display:inline-block"/>
+
+	    <div style="display:	inline-block">
 		    <div id="modelsQuestion">
 		        <h4>What model do you currently own?<h4>
 		    </div>
@@ -31,17 +35,16 @@
 		    </select>
 		</div>
 	    <!-- <div style="display:inline-block"> -->
-	        <img src="toilet_icon-01.png" class="toilicon" style="display:inline-block"/>
-	        <img src="toilet_icon-01.png" class="toilicon" style="display:inline-block"/>
-	        <img src="toilet_icon-01.png" class="toilicon" style="display:inline-block"/>
+	        <!-- <img src="toilet_icon-01.png" class="toilicon" style="display:inline-block"/> -->
+	        <!-- <img src="toilet_icon-01.png" class="toilicon" style="display:inline-block"/> -->
         <!-- </div> -->
 	    <br>
 	
-	   
     </div>
     
     <article ng-show="model.id == '0'">
     	<div class="stage" id="stageQ2">
+    	<div style="width:50%; margin:0 auto;">
 	    <!-- Dropdown for first option -->
 	    <div class="newModel0">
 	            <h4>What model do you want to buy?</h4>
@@ -54,6 +57,7 @@
 	          <option value="2">{{names[2].model}}</option>
 	        </select>
 	    </div>
+	   	</div>
 		</div>
     </article>
 
@@ -61,6 +65,7 @@
     <!-- Dropdown for second option -->
     <article ng-show="model.id == '1'">
     	<div class="stage" id="stageQ2">
+    	<div style="width:50%; margin:0 auto;">
 	    <div class="newModel1">
             <h4>What model do you want to buy?</h4>
 
@@ -73,11 +78,13 @@
         </select>
 	    </div>
 		</div>
+		</div>
     </article>
 
     <!-- Dropdown for second option -->
     <article ng-show="model.id == '2'">
     	<div class="stage" id="stageQ2">
+    	<div style="width:50%; margin:0 auto;">
 	    <div class="newModel2">
             <h4>What model do you want to buy?</h4>
 
@@ -88,6 +95,7 @@
           <option value="1">New Washing Machine One</option>
           <option value="2">New Washing Machine Two</option>
         </select>
+		</div>
 	    </div>
 	    </div>
     </article>
@@ -126,11 +134,16 @@
                 </table>
             </div>
 
-            <p>Total Rebate: {{toiletRebate}}</p>
+
+            
+
+            <div class="bigjunk">
+            <p>Total Rebate: ${{toiletRebate}}</p>
             <p>Total Water Saved: {{((names[3].gpf - names[newToilet.id].gpf) * 4 * 365).toFixed(2) }} gallons / year</p>
+            </div>
 
 	    	<div style="width:50%; margin:0 auto;">
-	            <img src="WaterDrop_Update_Hover.png" style="height:200px;"/>
+	            <img src="WaterDrop_Update_Hover.png" style="height:250px;"/>
 			</div>
 		</div>
         </div>
@@ -139,7 +152,8 @@
 
 
 <div class="stage" id="stageFooter">
-Arezu, Rashmi, Kevin, Reng @ IP HACKATHON
+<p style="font-weight:300; display:inline-block; margin:0px;">$ave Money One Drop at a Time:</p>
+<p style="display:inline-block;margin:0px;">Arezu, Rashmi, Kevin, Reng @ IP HACKATHON</p>
 </div>
 
   </body>

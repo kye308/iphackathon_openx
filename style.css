@@ -43,7 +43,7 @@ h2 {
 }
 
 #stageCompare {
-	background-color: #394D66;
+	background-color: #666666;
 	color: white;
 }
 
@@ -62,10 +62,18 @@ h2 {
 }
 
 .buynow {
-	width:100px;
+	width:150px;
 	
 }
 
 .toilicon {
 	height: 150px;
+}
+
+.bigjunk {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+table {
+	font-size: 18px;
 }
