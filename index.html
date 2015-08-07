@@ -28,9 +28,7 @@
 	    </select>
 	    <br>
 	
-	    <h4>How many devices do you want to buy?</h4>
-	    <counter ng-model="counterModel" id="counter" value="devices" min="0">{{counterModel.numDevices}}</counter>
-
+	   
     </div>
     
     <article ng-show="model.id == '0'">
@@ -93,16 +91,16 @@
                 <p>{{names.model}}</p>
                 <table>
 
-                  <tr><td>Model Name</td><td>{{names[0].model}}</td><td>{{names[1].model}}</td></tr>
-                    <tr><td>Model</td><td><img ng-src="{{names[0].picture}}" height="42" width="42"/></td><td><img ng-src="{{names[1].picture}}" height="42" width="42"/></td></tr>
+                  <tr><td>Model Name</td><td>{{names[3].model}}</td><td>{{names[1].model}}</td></tr>
+                    <tr><td>Model</td><td><img ng-src="{{names[3].picture}}" height="42" width="42"/></td><td><img ng-src="{{names[1].picture}}" height="42" width="42"/></td></tr>
 
-                  <tr><td>Gallons per flush</td><td>{{names[0].gpf}}</td><td>{{names[1].gpf}}</td></tr>
+                  <tr><td>Gallons per flush</td><td>{{names[3].gpf}}</td><td>{{names[1].gpf}}</td></tr>
                 <tr>
                      <td>Price</td>
-                     <td>{{names[0].price*devices}}</td><td>{{names[0].price}}</td>
+                     <td>{{names[3].price*devices}}</td><td>{{names[0].price}}</td>
                      <tr>
                      <td>Get Smart Now!</td>
-                     <td><a ng-href="{{names[1].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42"/></a></td>
+                     <td><a ng-href="{{names[3].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42"/></a></td>
                      <td><a ng-href="{{names[1].amazon}}"><img ng-src="{{names[0].picture}}" height="42" width="42" /></a></td>
                      </tr>
 
