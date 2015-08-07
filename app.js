@@ -132,7 +132,6 @@ function changeHouse() {
     var srcpic = document.getElementById("clickpic").getElementsByTagName('img')[0].src;
     var file = srcpic.split('/')[srcpic.split('/').length-1];
     if(file === "Home_NoneSelected.png") {
-        console.log("CHANGE GODDAMIT");
         document.getElementById("clickpic").getElementsByTagName('img')[0].src = "Home_ToiletSelected.png";
         console.log(document.getElementById("stageQ1").display);
         document.getElementById("stageQ1").style.display = "";
