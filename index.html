@@ -85,22 +85,17 @@
         
     </div>
 
-    <div> 
+    <div ng-controller="customersCtrl"> 
+<p>{{names.model}}</p>
+<table>
+  <tr ng-repeat="x in names">
+   
+    <td  style="background-color:#f1f1f1">
+    {{ x.model }}</td>
+  </tr>
+</table>
+</div>
 
-    <table>
-      <tr ng-repeat="x in names">
-        <td ng-if="$odd" style="background-color:#f1f1f1">
-        {{ x.Name }}</td>
-        <td ng-if="$even">
-        {{ x.Name }}</td>
-        <td ng-if="$odd" style="background-color:#f1f1f1">
-        {{ x.Country }}</td>
-        <td ng-if="$even">
-        {{ x.Country }}</td>
-      </tr>
-    </table>
-
-    </div>
   </body>
   
 
