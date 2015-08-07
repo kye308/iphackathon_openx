@@ -1,5 +1,26 @@
 body {
-	padding: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-color: #ADD2FF;
 	font-family: "Raleway";
+}
+
+h1 {
+	font-size: 100px;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.stage {
+	width:100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#stageQ1 {
+	background-color: white;
+}
+
+#stageQ2 {
+	background-color: #7FADE5;
 }
