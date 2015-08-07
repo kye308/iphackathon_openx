@@ -3,9 +3,8 @@
     var app = angular.module('rebates', []);
 
      app.controller('customersCtrl', function($scope, $http) {
+        $scope.devices = 1;
         var ref =  new Firebase("https://glowing-heat-7408.firebaseio.com/");
-
-        
 
         console.log(ref);
 
