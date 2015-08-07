@@ -1,6 +1,6 @@
 body {
 	padding-top: 50px;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 	background-color: #7FADE5;
 	font-family: "Raleway";
 }
@@ -35,8 +35,21 @@ h1 {
 	background-color: #6387B2;
 }
 
+#stageCompare {
+	background-color: #394D66;
+	color: white;
+}
+
+
 #stageFooter {
 	padding-bottom: 40px;
+	padding-top: 40px;
 	font-size: 20px;
 	text-align: right;
+	color: white;
+}
+
+.comptoilpic {
+	height:100px;
+	width:100px;
 }
