@@ -17,6 +17,7 @@
 <!-- 	    <img src="Logo.png" style="display:inline-block; height:100px;">
 	    <h1 style="display:inline-block;">MARTwater</h1> -->
 	    <h2 style="font-weight:300;">How Much Can You $ave?</h2>
+
 	    <div id="clickpic" onclick="changeHouse();" style="width:50%; margin:0 auto;">
 		    <img id="housepic" src="Home_NoneSelected.png" style="height:400px;"/>
 	    </div>
@@ -47,7 +48,7 @@
     	<div style="width:50%; margin:0 auto;">
 	    <!-- Dropdown for first option -->
 	    <div class="newModel0">
-	            <h4>What model do you want to buy?</h4>
+	            <h4>Now select a recommended model to view!</h4>
 
 	        <select ng-model="newToilet.id" 
 	                ng-init='newToilet.id = ""'convert-to-number>
@@ -106,6 +107,7 @@
     	<div style="width:50%; margin:0 auto;">
 	    <div ng-controller="customersCtrl" class="compareAndSave">
         <br>
+        <h2>Let's Compare Savings</h2>
             <div> 
                 <p>{{names.model}}</p>
                 <table class="table">
@@ -116,10 +118,10 @@
 
 
                   <tr><td>Gallons per flush</td><td>{{names[3].gpf}}</td><td>{{names[newToilet.id].gpf}}</td></tr>
-                <tr>
+               <!--  <tr>
                      <td>Price</td>
                      <td>{{names[3].price*devices}}</td><td>{{names[newToilet.id].price}}</td>
-
+-->
                      <tr>
 
                      <td>Get $mart Now!</td>
@@ -143,7 +145,7 @@
             </div>
 
 	    	<div style="width:50%; margin:0 auto;">
-	            <img src="WaterDrop_Update_Hover.png" style="height:250px;"/>
+	            <img src="WaterDrop_Update_Hover.png" style="padding-top:20px; height:250px;"/>
 			</div>
 		</div>
         </div>
